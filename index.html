@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="datacleansing.io@gmail.com">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Data Cleansing Cloud</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+       <div class="container">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="#">Data Cleansing Cloud</a>
+         </div>
+         <div id="navbar" class="navbar-collapse collapse">
+           <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="http://hub.datacleansing.io/">Hub</a></li>
+              <li><a href="http://datacleansing.io/EngineHub">Engine</a></li>
+            </ul>
+         </div><!--/.navbar-collapse --> -->
+       </div>
+     </nav>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Sharing Cleansing Knowledge</h1>
+        <p>
+          It's an open source data process framework under a micro-service architecture. The purpose of this application is to let people exchange the knowledge of hwo to clean the data and applying those knowledge to the data.<br/>
+        </p>
+<!--
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Algorithm</h2>
+          <p>
+            An algorithm is a data process logic.<br/>
+          </p>
+          <p>
+          Algorithm has its category(DataQuality, DataCleansing, DataMining, etc.) and the domain (Contract Information, Product Name, etc.)<br/>
+          Algorithm, which is embeded in an EngineAgent in DataMining Cloud. Will be published as docker image.<br/>
+          </p>
+          <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+        </div>
+        <div class="col-md-4">
+          <h2>Model</h2>
+          <p>
+            A model is the setting or knowledge base of a algorithm.<br/>
+            Model has its type, locale and version.
+            Model can be created based on an existed model or build from a Service or Flow. <br/>
+            Model and job can be shared and archive. <br/>
+            Model and job can be exported, in someway. A CVS file, a SQL script or a AWS S3 ticket, etc.<br/>
+          </p>
+          <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+       </div>
+        <div class="col-md-4">
+          <h2>Job</h2>
+          <p>
+          A Process is a combination of algorithm and model.<br/>
+            A Job is a banch of processes with some flow control.<br/>
+            A Job could be deployied to the DMC Engine as a Flow.<br/>
+            Flow could last for a very long period(10h?).<br/>
+            If a flow's running is very quick(less then 10s), that job can be published to ServiceProxy as a REST Service. Every calling will trigger a new flow with the job.<br/>
+            <br/>
+          </p>
+          <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+        </div>
+      </div>
+
+      <hr>
+
+      <footer><p class="text-center">2015 - 2016 Copyright</p></footer>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
